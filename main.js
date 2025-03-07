@@ -1,4 +1,3 @@
-<script src="/socket.io/socket.io.js"></script>
 $("#loading").hide();
 $("#bigCont").hide();
 $("#userCont").hide();
