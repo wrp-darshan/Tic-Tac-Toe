@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <script src="/socket.io/socket.io.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/stylee.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="icon" href="./tic-tac-toe.png" type="image/png" />
+  <title>Tic-Tac-Toe</title>
+</head>
+
+<body>
+  <h1>Tic-Tac-Toe</h1>
+
+  <div>
+    <p id="userCont"> You : <span id="user"></span></p>
+    <p id="opponentCont"> Opponent : <span id="oppName"></span></p>
+
+  </div>
+
+  <p id="valueCont">You are playing as <span id="value"></span></p>
+  <p id="whoesTurn">X's Turn</p>
+
+  <div>
+    <p id="enterName">Enter Your Name : </p>
+    <input type="text" id="name" name="nameInput" placeholder="Name" autocomplete="off">
+  </div>
+
+  <button id="find">Search for a player</button>
+  <div style="display: flex; justify-content: center; margin-top: 10px;">
+    <img src="load.gif" id="loading" alt="">
+    <button id="exitGame" style="display:none;">Exit Game</button>
+    <button id="restartGame" style="display:none;">Restart Game</button>
+  </div>
+
+  <div id="bigCont">
+    <div id="cont">
+      <button class="btn" id="btn1"></button>
+      <button class="btn" id="btn2"></button>
+      <button class="btn" id="btn3"></button>
+      <button class="btn" id="btn4"></button>
+      <button class="btn" id="btn5"></button>
+      <button class="btn" id="btn6"></button>
+      <button class="btn" id="btn7"></button>
+      <button class="btn" id="btn8"></button>
+      <button class="btn" id="btn9"></button>
+    </div>
+  </div>
+  <div class="chat-box">
+    <div class="chat-box-header">
+      <h3>Message Us</h3>
+      <p class="close-chat"><i class="fa fa-times"></i></p>
+    </div>
+    <div class="chat-box-body" id="messages"></div>
+    <div class="chat-box-footer">
+      <input id="messageInput" placeholder="Enter Your Message" type="text">
+      <button id="sendMessage">Send</button>
+    </div>
+  </div>
+  <div class="chat-button" id="chatbutton" style="display: none;">
+    <span>Message Us</span>
+  </div>
+  <div class="modal">
+    <div class="modal-content">
+      <span class="modal-close-button">&times;</span>
+      <h1>Add What you want here.</h1>
+    </div>
+  </div>
+
+</body>
+<script src="./main.js"></script>
+
+</html>
